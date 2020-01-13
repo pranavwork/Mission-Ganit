@@ -1759,9 +1759,9 @@ html {
       height: 300px;
       flex-direction: column;
 
-      &::-webkit-scrollbar {
-        height: 5px;
-      }
+      // &::-webkit-scrollbar {
+      //   height: 5px;
+      // }
 
       .stakeholders-div {
         flex: 1 1 100% !important;

@@ -1792,9 +1792,6 @@ html ::-webkit-scrollbar-thumb:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #stakeholders-section .stakeholders-grid::-webkit-scrollbar {
-    height: 5px;
-  }
   #stakeholders-section .stakeholders-grid .stakeholders-div {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 100% !important;
