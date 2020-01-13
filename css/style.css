@@ -199,6 +199,29 @@ input:active {
   vertical-align: middle;
 }
 
+html {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #fd4c66;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #e00323;
+}
+
 #section1 {
   cursor: url("../images/pi.png"), pointer;
   height: 700px;
@@ -893,9 +916,30 @@ input:active {
   background-color: #323232;
 }
 
+@media (max-width: 409px) {
+  #models .video-gallery .video {
+    display: block;
+  }
+  #models .video-gallery .video button.btn-play {
+    top: 0%;
+    left: 5%;
+  }
+}
+
+#models .video-gallery .wrapper:hover .btn-play, #models .video-gallery .wrapper:active .btn-play, #models .video-gallery .wrapper:visited .btn-play, #models .video-gallery .wrapper:focus .btn-play {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #models .video-gallery .wrapper {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
 #models .video-gallery button.btn-play {
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 3%;
   bottom: 0;
   padding: 0;
@@ -918,10 +962,13 @@ input:active {
   margin: 0;
   color: inherit;
   background-color: inherit;
-  font-size: 64px;
+  font-size: 40px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  #models .video-gallery .wrapper {
+    margin-bottom: 30px;
+  }
   #models .video-gallery button.btn-play {
     top: -60%;
     left: 5%;
@@ -942,12 +989,15 @@ input:active {
 }
 
 @media (max-width: 767px) {
+  #models .video-gallery img {
+    width: 100%;
+  }
   #models .video-gallery .wrapper {
     text-align: center;
   }
   #models .video-gallery button.btn-play {
-    top: -67%;
-    left: 5%;
+    top: 82%;
+    left: -42%;
   }
   #models .video-gallery button.btn-play .fa-play {
     font-size: 56px;

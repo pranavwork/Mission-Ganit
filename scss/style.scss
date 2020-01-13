@@ -2,6 +2,28 @@
 @import "state";
 @import "module";
 
+html {
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary2;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken($primary2, 20%);
+  }
+}
 
 #section1 {
   cursor: url('../images/pi.png'), pointer;
@@ -758,11 +780,37 @@
     // .img-responsive {
     //   width: 100%;
     // }
+    .video {
+      @media (max-width: 409px) {
+        display: block;
 
+        button.btn-play {
+          top: 0%;
+          left: 5%;
+        }
+      }
+    }
+
+    .wrapper {
+
+      &:hover,
+      &:active,
+      &:visited,
+      &:focus {
+        .btn-play {
+          color: rgba(255, 255, 255, 1.0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        padding: 0;
+      }
+    }
 
     button.btn-play {
       position: absolute;
-      top: 60%;
+      top: 75%;
       left: 3%;
       bottom: 0;
       padding: 0;
@@ -787,11 +835,15 @@
         margin: 0;
         color: inherit;
         background-color: inherit;
-        font-size: 64px;
+        font-size: 40px;
       }
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
+      .wrapper {
+        margin-bottom: 30px;
+      }
+
       button.btn-play {
         top: -60%;
         left: 5%;
@@ -814,6 +866,9 @@
     }
 
     @media (max-width: 767px) {
+      img {
+        width: 100%;
+      }
 
       // a.video {
       //   display: block;
@@ -825,8 +880,8 @@
       }
 
       button.btn-play {
-        top: -67%;
-        left: 5%;
+        top: 82%;
+        left: -42%;
 
         .fa-play {
           font-size: 56px;
