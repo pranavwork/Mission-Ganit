@@ -748,34 +748,6 @@ html {
   }
 
   .video-gallery {
-    .modal {
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .modal-header {
-      border-bottom: 1px solid #505050;
-      padding: 12px 16px 6px 16px;
-
-      .modal-title {
-        color: #ccc;
-
-        margin: 0;
-      }
-
-      .close {
-        font-size: 32px;
-        opacity: 1.0;
-        color: #ccc;
-        text-shadow: none;
-        outline: none;
-      }
-    }
-
-    .modal-content {
-      border-radius: 0;
-      border: 0;
-      background-color: #323232;
-    }
 
     // .img-responsive {
     //   width: 100%;

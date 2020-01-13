@@ -52,3 +52,46 @@
         vertical-align: middle;
     }
 }
+
+
+// Video galley modal
+.ekko-lightbox {
+
+    .modal-dialog {
+        @media(max-width: 1200px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) !important;
+            width: 98% !important;
+            margin: auto;
+        }
+    }
+
+    .modal-header {
+        border-bottom: 1px solid #bebebe;
+        padding: 12px 16px 6px 16px;
+        display: flex;
+
+        .modal-title {
+            color: $hcolor;
+
+            margin: 0;
+        }
+
+        .close {
+            font-size: 32px;
+            opacity: 1.0;
+            color: $hcolor;
+            text-shadow: none;
+            outline: none;
+            margin: -1rem auto -1rem -1rem;
+        }
+    }
+
+    .modal-content {
+        border-radius: 0;
+        border: 0;
+        background-color: $bgcolor;
+    }
+}
