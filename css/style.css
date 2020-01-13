@@ -1800,9 +1800,6 @@ html ::-webkit-scrollbar-thumb:hover {
     border-radius: 10px;
     margin-right: 12px;
   }
-  #stakeholders-section .stakeholders-grid .stakeholders-div:first-child {
-    margin-left: 12px;
-  }
   #section10 ul {
     display: -ms-grid;
     display: grid;
