@@ -1762,6 +1762,15 @@ html {
       // &::-webkit-scrollbar {
       //   height: 5px;
       // }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: initial;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: initial;
+      }
 
       .stakeholders-div {
         flex: 1 1 100% !important;
