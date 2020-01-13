@@ -784,11 +784,15 @@ html {
       @media (max-width: 409px) {
         display: block;
 
-        button.btn-play {
-          top: 0%;
-          left: 5%;
-        }
+        // button.btn-play {
+        //   top: 0%;
+        //   left: 5%;
+        // }
       }
+    }
+
+    img {
+      width: 100%;
     }
 
     .wrapper {
@@ -810,9 +814,9 @@ html {
 
     button.btn-play {
       position: absolute;
-      top: 75%;
-      left: 3%;
+      top: 0;
       bottom: 0;
+      right: 0;
       padding: 0;
       margin: 0;
       margin-left: -15px;
@@ -839,14 +843,14 @@ html {
       }
     }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
       .wrapper {
         margin-bottom: 30px;
       }
 
       button.btn-play {
-        top: -60%;
-        left: 5%;
+        // top: -60%;
+        // left: 5%;
 
         .fa-play {
           font-size: 56px;
@@ -856,8 +860,8 @@ html {
 
     @media (min-width: 768px) and (max-width: 991px) {
       button.btn-play {
-        top: 75%;
-        left: 3%;
+        // top: 75%;
+        // left: 3%;
 
         .fa-play {
           font-size: 46px;
@@ -880,8 +884,8 @@ html {
       }
 
       button.btn-play {
-        top: 82%;
-        left: -42%;
+        // top: 82%;
+        // left: -42%;
 
         .fa-play {
           font-size: 56px;
