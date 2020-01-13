@@ -1761,14 +1761,17 @@ html {
 
       &::-webkit-scrollbar {
         height: 5px;
-
       }
 
       .stakeholders-div {
         flex: 1 1 100% !important;
         width: 300px;
         border-radius: 10px;
-        margin: 0 10px;
+        margin-right: 12px;
+
+        &:first-child {
+          margin-left: 12px;
+        }
       }
     }
   }
