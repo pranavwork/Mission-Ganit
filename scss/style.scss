@@ -1764,12 +1764,12 @@ html {
       // }
       /* Handle */
       &::-webkit-scrollbar-thumb {
-        background: initial;
+        background-color: initial;
       }
 
       /* Handle on hover */
       &::-webkit-scrollbar-thumb:hover {
-        background: initial;
+        background-color: initial;
       }
 
       .stakeholders-div {
@@ -1778,9 +1778,9 @@ html {
         border-radius: 10px;
         margin-right: 12px;
 
-        // &:first-child {
-        //   margin-left: 12px;
-        // }
+        &:first-child {
+          margin-left: 12px;
+        }
       }
     }
   }

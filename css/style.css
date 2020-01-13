@@ -1795,10 +1795,10 @@ html ::-webkit-scrollbar-thumb:hover {
     /* Handle on hover */
   }
   #stakeholders-section .stakeholders-grid::-webkit-scrollbar-thumb {
-    background: initial;
+    background-color: initial;
   }
   #stakeholders-section .stakeholders-grid::-webkit-scrollbar-thumb:hover {
-    background: initial;
+    background-color: initial;
   }
   #stakeholders-section .stakeholders-grid .stakeholders-div {
     -webkit-box-flex: 1 !important;
@@ -1807,6 +1807,9 @@ html ::-webkit-scrollbar-thumb:hover {
     width: 300px;
     border-radius: 10px;
     margin-right: 12px;
+  }
+  #stakeholders-section .stakeholders-grid .stakeholders-div:first-child {
+    margin-left: 12px;
   }
   #section10 ul {
     display: -ms-grid;
