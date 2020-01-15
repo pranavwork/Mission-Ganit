@@ -221,6 +221,7 @@ input:active {
 
 .ekko-lightbox .modal-header .modal-title {
   color: #212529;
+  text-align: right;
   margin: 0;
 }
 
@@ -921,11 +922,11 @@ html ::-webkit-scrollbar-thumb:hover {
   font-family: "Staatliches", cursive;
   color: #161b7f;
   line-height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #models h4 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 409px) {
@@ -1013,6 +1014,16 @@ html ::-webkit-scrollbar-thumb:hover {
   }
   #models .video-gallery button.btn-play .fa-play {
     font-size: 56px;
+  }
+}
+
+#models .download-wrapper {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  #models .download-wrapper {
+    margin-top: 30px;
   }
 }
 
