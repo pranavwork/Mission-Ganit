@@ -765,23 +765,7 @@ html {
 
     img {
       width: 100%;
-    }
-
-    .wrapper {
-
-      &:hover,
-      &:active,
-      &:visited,
-      &:focus {
-        .btn-play {
-          color: rgba(255, 255, 255, 1.0);
-        }
-      }
-
-      @media (max-width: 768px) {
-        margin-bottom: 30px;
-        padding: 0;
-      }
+      filter: brightness(75%);
     }
 
     button.btn-play {
@@ -798,6 +782,8 @@ html {
       width: 100%;
       background-color: transparent;
       color: rgba(245, 245, 245, 0.8);
+      // color: #fff;
+      z-index: 1;
 
       &:hover,
       &:active,
@@ -812,6 +798,25 @@ html {
         color: inherit;
         background-color: inherit;
         font-size: 40px;
+      }
+    }
+
+    .wrapper {
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        padding: 0;
+      }
+
+      &:hover {
+        img {
+          filter: brightness(90%);
+          transition: .2s ease-in-out;
+        }
+
+        .fa-play {
+          color: $primary2;
+          transition: .2s ease-in-out;
+        }
       }
     }
 
